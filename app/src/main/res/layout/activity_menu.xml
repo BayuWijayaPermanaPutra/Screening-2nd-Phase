@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="suitmedia.com.testscreeningbayuwpp.MenuActivity">
+    <Button
+        android:id="@+id/menu_button_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:text="@string/pilih_event"
+        android:textAllCaps="false"
+        />
+    <TextView
+        android:id="@+id/menu_textview_name"
+        android:layout_above="@id/menu_button_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="35dp"
+        />
+    <Button
+        android:id="@+id/menu_button_guest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu_button_event"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/pilih_guest"
+        android:textAllCaps="false"
+        />
+
+</RelativeLayout>
