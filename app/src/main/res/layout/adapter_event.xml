@@ -1,36 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    >
-    <ImageView
-        android:id="@+id/adapterevent_imageview_eventimage"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        />
+    android:orientation="horizontal">
+
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_gravity="center_vertical"
         android:layout_width="match_parent"
-        android:layout_margin="8dp"
-        android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/adapterevent_textview_eventname"
-            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="abc event"
-            android:layout_marginBottom="10dp"
-            android:textSize="16sp"
-            />
-        <TextView
-            android:id="@+id/adapterevent_textview_eventdate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="13 Januari 2015"
-            android:textSize="16sp"
-            />
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/adapterevent_textview_eventname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Let Success Make The Noise"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/adapterevent_textview_eventdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nov 09 2014"
+                android:textColor="@color/orange_semi"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:id="@+id/adapterevent_linear_eventtag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/adapterevent_textview_eventdescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="hdjak dsakhds dajksah dsajkdhsajk dsajkdhsajkdas dsjakdhakdsa" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/adapterevent_imageview_eventimage"
+            android:layout_width="0dp"
+            android:layout_height="135dp"
+            android:layout_gravity="right"
+            android:layout_weight="1" />
     </LinearLayout>
-</LinearLayout>
+
+</android.support.v7.widget.CardView>

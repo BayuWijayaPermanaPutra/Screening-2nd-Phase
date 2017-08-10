@@ -1,4 +1,4 @@
-package suitmedia.com.testscreeningbayuwpp;
+package suitmedia.com.testscreeningbayuwpp.Guest;
 
 import java.util.List;
 
@@ -7,13 +7,22 @@ import java.util.List;
  */
 
 public class Guest {
-
+    private int id;
     private String name;
     private String birthdate;
 
-    public Guest(String name, String birthdate) {
+    public Guest(int id, String name, String birthdate) {
+        this.id = id;
         this.name = name;
         this.birthdate = birthdate;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -30,16 +39,5 @@ public class Guest {
 
     public void setBirthdate(String birthdate) {
         this.birthdate = birthdate;
-    }
-    public class GuestList {
-        private List<Guest> result;
-
-        public List<Guest> getResult() {
-            return result;
-        }
-
-        public void setResult(List<Guest> result) {
-            this.result = result;
-        }
     }
 }

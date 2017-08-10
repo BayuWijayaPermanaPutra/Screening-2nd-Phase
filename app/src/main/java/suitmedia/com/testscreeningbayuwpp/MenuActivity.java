@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import suitmedia.com.testscreeningbayuwpp.Event.EventActivity;
+import suitmedia.com.testscreeningbayuwpp.Guest.GuestActivity;
+
 public class MenuActivity extends AppCompatActivity implements View.OnClickListener {
     private String valueName;
     private TextView textViewName;

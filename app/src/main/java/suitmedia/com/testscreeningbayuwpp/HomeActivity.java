@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -55,16 +56,30 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private boolean isPalindrome(String valueName) {
-        if(valueName.equalsIgnoreCase("kasur rusak")){
+        int length = valueName.length();
+        String reverseName = "";
+        for ( int i = length - 1; i >= 0; i-- ) {
+            reverseName = reverseName + valueName.charAt(i);
+        }
+        String[] values = valueName.split(" ");
+        String[] reverseValues = reverseName.split(" ");
+        int status = 0;
+        for (int i=0; i< values.length; i++) {
+            for (int j=0; j<reverseValues.length; j++){
+                Log.e("string1","value"+values[i]);
+                Log.e("string2","value"+reverseValues[j]);
+                if(values[i].toLowerCase().contains(reverseValues[j].toLowerCase()) || reverseValues[j].toLowerCase().contains(values[i].toLowerCase())){
+                    status = 1;
+                } else {
+                    status = 0;
+                }
+            }
+        }
+        if(status == 1){
             return true;
-        } else if(valueName.equalsIgnoreCase("step on no pets")){
-            return true;
-        } else if(valueName.equalsIgnoreCase("put it up")){
-            return true;
-        } else if(valueName.equalsIgnoreCase("suitmedia")){
+        } else {
             return false;
         }
-        return false;
     }
 
     private void initView() {

@@ -3,12 +3,12 @@ package suitmedia.com.testscreeningbayuwpp;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import okhttp3.Callback;
 import okhttp3.OkHttpClient;
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
+import suitmedia.com.testscreeningbayuwpp.Guest.Guest;
 
 /**
  * Created by Bayu WPP on 8/8/2017.
